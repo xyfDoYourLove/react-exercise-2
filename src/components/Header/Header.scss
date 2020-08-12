@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+
+header {
+  background-color: $support-blue;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $base-padding;
+
+  .cart {
+    display: flex;
+    align-items: center;
+    .cart-img {
+      width: 1rem;
+      height: 1rem;
+    }
+    .count {
+      margin: 0 3px;
+      display: inline-block;
+      text-align: center;
+      background-color: $support-red;
+      color: $white;
+      width: 1.5rem;
+      border-radius: .5rem;
+    }
+  }
+}
