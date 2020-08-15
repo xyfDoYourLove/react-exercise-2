@@ -12,7 +12,12 @@ class GoodsList extends React.Component {
     const { goodsList, onAddToCart } = this.props;
     return Object.keys(goodsList).map((key, index) => {
       return (
-        <Category onAddToCart={onAddToCart} data={goodsList[key]} key={index} />
+        <Category
+          onAddToCart={onAddToCart}
+          category={goodsList[key][0].category}
+          data={goodsList[key]}
+          key={index}
+        />
       );
     });
   }

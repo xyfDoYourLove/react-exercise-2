@@ -53,9 +53,9 @@ class App extends Component {
       if (!result[itm.category]) {
         result[itm.category] = [];
       }
-      const newItm = Object.assign({}, itm);
-      Reflect.deleteProperty(newItm, 'category');
-      result[itm.category].push(newItm);
+      // const newItm = Object.assign({}, itm);
+      // Reflect.deleteProperty(newItm, 'category');
+      result[itm.category].push(itm);
     });
     return result;
   }
